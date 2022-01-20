@@ -5,9 +5,9 @@
 yet, or the repository is only intended to be a limited example, demo,
 or
 proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
-[![](https://img.shields.io/badge/Twitter-@londonmapbot-white?style=flat&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/phillymapbot)
+[![](https://img.shields.io/badge/Twitter-@phillymapbot-white?style=flat&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/phillymapbot)
 
-Source for the Twitter bot [@londonmapbot](https://www.twitter.com/londonmapbot). It posts satellite images of random coordinates in Greater London using [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) and [GitHub Actions](https://docs.github.com/en/actions). Built by [@mattdray](https://twitter.com/mattdray).
+Source for the Twitter bot [@phillymapbot](https://www.twitter.com/phillymapbot). It posts satellite images of random coordinates in Greater London using [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) and [GitHub Actions](https://docs.github.com/en/actions). Concept by [@mattdray](https://twitter.com/mattdray).
 
 # What
 
