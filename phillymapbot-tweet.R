@@ -7,12 +7,10 @@ phillymapbot_token <- rtweet::create_token(
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
 
-
-
 # Generate random coordinates within specific limits
 lon <- round(runif(1, -75.2, -75.1), 4)
 lon <- format(lon, scientific = FALSE)
-lat <- round(runif(1, 39.9, 40.0), 4)  # lat 39.897318. # long -75.139258  # lat 40.052, Long -75.2305
+lat <- round(runif(1, 39.9, 40.0), 4)
 
 # Build URL and fetch image from Mapbox API
 img_url <- paste0(
