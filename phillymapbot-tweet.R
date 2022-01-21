@@ -1,3 +1,5 @@
+install.packages("rtweet")
+
 # Create Twitter token
 phillymapbot_token <- rtweet::create_token(
   app = "phillymapbot",
