@@ -3,6 +3,9 @@ name: phillymapbot
 on:
   schedule:
     - cron: '42 0/2 * * *'  # once every two hours
+  push:
+    branches:
+      - main
 
 jobs:
   phillymapbot-post:
