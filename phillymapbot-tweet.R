@@ -10,9 +10,6 @@ phillymapbot_token <- rtweet::create_token(
   set_renv = FALSE
 )
 
-rtweet::post_tweet(status = "This is a test tweet.",
-                   token = phillymapbot_token)
-
 # Generate random coordinates within specific limits
 lon <- round(runif(1, -75.2, -75.1), 4)
 lon <- format(lon, scientific = FALSE)
