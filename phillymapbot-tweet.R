@@ -11,7 +11,7 @@ phillymapbot_token <- rtweet::create_token(
 )
 
 # Generate random coordinates within specific limits
-lon <- round(runif(1, -75.4, -74.9), 4)
+lon <- round(runif(1, -75.3, -74.9), 4)
 lon <- format(lon, scientific = FALSE)
 lat <- round(runif(1, 39.9, 40.1), 4)
 
