@@ -11,7 +11,7 @@ Source for the Twitter bot [@phillymapbot](https://www.twitter.com/phillymapbot)
 
 # What
 
-This repo contains a [GitHub Action](https://github.com/features/actions) that runs on schedule (currently every half-hour). It executes R code that queries [the Mapbox API](https://docs.mapbox.com/api/maps/#static-images) for a satellite image of random co-ordinates in a bounding box roughly around Philadelphia. The image is posted to [@phillymapbot](https://www.twitter.com/phillymapbot) on Twitter using [{rtweet}](https://docs.ropensci.org/rtweet/), along with a URL for that location on [OpenStreetMap](https://www.openstreetmap.org/).
+This repo contains a [GitHub Action](https://github.com/features/actions) that runs on schedule. It executes R code that queries [the Mapbox API](https://docs.mapbox.com/api/maps/#static-images) for a satellite image of random co-ordinates in a bounding box roughly around Philadelphia. The image is posted to [@phillymapbot](https://www.twitter.com/phillymapbot) on Twitter using [{rtweet}](https://docs.ropensci.org/rtweet/), along with a URL for that location on [OpenStreetMap](https://www.openstreetmap.org/).
 
 See also the:
 
