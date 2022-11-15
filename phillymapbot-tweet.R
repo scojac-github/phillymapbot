@@ -45,4 +45,3 @@ rtweet::post_tweet(
   media_alt_text = alt_text,
   token          = phillymapbot_token
 )
-
