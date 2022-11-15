@@ -1,12 +1,11 @@
 install.packages("rtweet")
 
 # Create Twitter tokens
-phillymapbot_token <- rtweet::create_token(
-  app = "phillymapbot",
-  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
-  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
-  access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
-  access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET"),
+phillymapbot_token <- rtweet::rtweet_bot(
+  api_key       = Sys.getenv("TWITTER_CONSUMER_API_KEY"),
+  api_secret    = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
+  access_token  = Sys.getenv("TWITTER_ACCESS_TOKEN"),
+  access_secret = Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
   set_renv = FALSE
 )
 
@@ -24,7 +23,7 @@ img_url <- paste0(
 )
 
 # Download the image to a temporary location
-temp_file <- tempfile()
+temp_file <- tempfile(fileext = ".jpeg")
 download.file(img_url, temp_file)
 
 # Build the status message (text and URL)
@@ -34,9 +33,16 @@ latlon_details <- paste0(
 )
 
 # Post the image to Twitter
+alt_text <- paste(
+  "A satellite image of a random location in Philadelphia,",
+  "provided by MapBox. Typically contains a residential or",
+  "industrial area, some fields or a golf course."
+)
+
 rtweet::post_tweet(
-  status = latlon_details,
-  media = temp_file,
-  token = phillymapbot_token
+  status         = latlon_details,
+  media          = temp_file,
+  media_alt_text = alt_text,
+  token          = phillymapbot_token
 )
 
