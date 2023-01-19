@@ -4,7 +4,7 @@
 [![phillymapbot](https://github.com/scojac-github/phillymapbot/actions/workflows/phillymapbot.yml/badge.svg)](https://github.com/scojac-github/phillymapbot/actions/workflows/phillymapbot.yml)
 [![](https://img.shields.io/badge/Twitter-@phillymapbot-white?style=flat&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/phillymapbot)
 
-Source for the Twitter bot [@phillymapbot](https://www.twitter.com/phillymapbot). It posts satellite images of random coordinates in Philadelphia using [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) and [GitHub Actions](https://docs.github.com/en/actions). Concept by [@mattdray](https://twitter.com/mattdray).
+Source for the Twitter bot [@phillymapbot](https://www.twitter.com/phillymapbot). Posts satellite images of random coordinates in Philadelphia using [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) and [GitHub Actions](https://docs.github.com/en/actions). Concept by [@mattdray](https://twitter.com/mattdray).
 
 # What
 
